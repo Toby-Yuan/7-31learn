@@ -9,44 +9,54 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        .form-group{
+        /* .form-group, .btn{
             margin: 0 10px;
-        }
+        } */
     </style>
 </head>
 <body>
 
     <div class="container">
-        <form action="" class="form-inline">
-            <div class="form-group">
-                <label for="userNameTextBox">
+        <form action="">
+            <div class="form-group row">
+                <label for="userNameTextBox" class="col-form-label col-2 text-right">
                     <i class="fa fa-user"></i>帳號:
                 </label>
-                <input type="text" class="form-control" id="userNameTextBox" placeholder="請輸入帳號或E-mail">
+                <input type="text" class="col-10 form-control" id="userNameTextBox" placeholder="請輸入帳號或E-mail">
             </div>
             
-            <div class="form-group">
-                <label for="userNameTextBox">
+            <div class="form-group row">
+                <label for="userNameTextBox" class="col-form-label col-2 text-right">
                     <i class="fa fa-lock"></i>密碼:
                 </label>
-                <input type="password" class="form-control" id="userNameTextBox" placeholder="請在此輸入密碼">
+                <input type="password" class="col-10 form-control" id="userNameTextBox" placeholder="請在此輸入密碼">
             </div>
     
-            <div class="form-group form-check">
-                <!-- checkbox可以放在label裡面 -->
-                <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">記住我(下次自動登入)
-                </label>
+            <div class="form-group row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="form-check col-sm-10">
+                    <!-- checkbox可以放在label裡面 -->
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">記住我(下次自動登入)
+                    </label>
+                </div>
             </div>
 
-            <!-- button與<input type="button">的效果一樣 -->
-            <!-- 使用input會不好加入圖片<i>, buuton相對好控制 -->
-            <button id="logButton" class="btn btn-outline-success" type="button">
-                <i class="fa fa-check"></i>登入
-            </button>
-            <button id="cancelButton" class="btn btn-outline-secondary" type="button">
-                <i class="fa fa-remove"></i>取消
-            </button>
+
+            <div class="form-group row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-10">
+
+                    <!-- button與<input type="button">的效果一樣 -->
+                    <!-- 使用input會不好加入圖片<i>, buuton相對好控制 -->
+                    <button id="logButton" class="btn btn-outline-success" type="button">
+                        <i class="fa fa-check"></i>登入
+                    </button>
+                    <button id="cancelButton" class="btn btn-outline-danger" type="button">
+                        <i class="fa fa-remove"></i>取消
+                    </button>
+                </div>
+            </div>
 
         </form>
     </div>
