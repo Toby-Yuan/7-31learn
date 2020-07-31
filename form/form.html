@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 學習1</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- form : 表單, input : 空格(預設是type="Text"), label : 可以直接點入空格 -->
+    <!-- label for="#inputIdName" -->
+    <!-- method : 傳遞方法, action : 傳遞位置 -->
+    <!-- 後端收資料是收name!!! -->
+    <form action="" method="POST">
+        <label for="userName">Your Name:</label>
+        <input type="text" id="userName" name="userName">
+        <br>
+
+        <!-- checkbox可以放在Label裡面 -->
+        <!-- 後臺會收到 on 空 -->
+        <input type="checkbox" id="autoLogin" name="autoLogin">
+        <label for="autoLogin">Auto Login</label>
+        <br>
+
+        <!-- radio : 單選原點 -->
+        <!-- 需要有相同的name -->
+        <!-- value : 給後端看的(需要跟後端得商量!!) -->
+        <input type="radio" id="tp" value="2" name="city">
+        <label for="tp">台北</label>
+        <input type="radio" id="tc" value="4" name="city">
+        <label for="tc">台中</label>
+        <input type="radio" id="tn" value="6" name="city">
+        <label for="tn">台南</label>
+
+        <!-- 提交按鈕, placeholder : 按鈕的文字 -->
+        <input type="submit" value="OK">
+    </form>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
