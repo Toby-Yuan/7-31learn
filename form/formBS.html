@@ -7,10 +7,40 @@
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
+
+    <div class="container">
+        <form action="" class="form-inline">
+            <div class="form-group">
+                <label for="userNameTextBox">
+                    <i class="fa fa-user"></i>帳號:
+                </label>
+                <input type="text" class="form-control" id="userNameTextBox" placeholder="請輸入帳號或E-mail">
+            </div>
+            
+            <div class="form-group">
+                <label for="userNameTextBox">
+                    <i class="fa fa-lock"></i>密碼:
+                </label>
+                <input type="password" class="form-control" id="userNameTextBox" placeholder="請在此輸入密碼">
+            </div>
     
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">記住我(下次自動登入)
+                </label>
+            </div>
+
+            <button id="logButton" class="btn btn-outline-success" type="button">
+                <i class="fa fa-check"></i>登入
+            </button>
+            <button id="cancelButton" class="btn btn-outline-secondary" type="button">
+                <i class="fa fa-remove"></i>取消
+            </button>
+
+        </form>
+    </div>
     
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
