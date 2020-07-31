@@ -5,3 +5,4 @@
 # form
 - 基礎觀念 : /form/form.html
 - Bootstrap form : /form/formBS.html  
+- 本機php位置 : C:\xampp\htdocs
