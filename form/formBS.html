@@ -17,7 +17,7 @@
 <body>
 
     <div class="container">
-        <form action="">
+        <form action="http://server2020.epizy.com/echo.php" method="post">
             <div class="form-group row">
                 <label for="userNameTextBox" class="col-form-label col-sm-2 text-sm-right">
                     <i class="fa fa-user"></i>帳號:
@@ -50,10 +50,10 @@
 
                     <!-- button與<input type="button">的效果一樣 -->
                     <!-- 使用input會不好加入圖片<i>, buuton相對好控制 -->
-                    <button id="logButton" class="btn btn-outline-success" type="button">
+                    <button name="loginOrCancel" value="submit" id="loginButton" class="btn btn-outline-success" type="submit">
                         <i class="fa fa-check"></i>登入
                     </button>
-                    <button id="cancelButton" class="btn btn-outline-danger" type="button">
+                    <button name="loginOrCancel" value="cancel" id="cancelButton" class="btn btn-outline-danger" type="submit">
                         <i class="fa fa-remove"></i>取消
                     </button>
                 </div>
